@@ -26,10 +26,10 @@ st.subheader('User Input parameters')
 st.write(df)
 
 
-modelGaussianIris = pickle.load(open("AdvertisingLRmodel.h5", "rb"))
+modelLRAdvertise = pickle.load(open("AdvertisingLRmodel.h5", "rb"))
 
 
-prediction = modelGaussianIris.predict(df)
+prediction = modelLRAdvertise.predict(df)
 
 
 st.subheader('Prediction')
