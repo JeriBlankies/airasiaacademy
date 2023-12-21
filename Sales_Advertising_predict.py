@@ -30,10 +30,9 @@ modelGaussianIris = pickle.load(open("AdvertisingLRmodel.h5", "rb"))
 
 
 prediction = modelGaussianIris.predict(df)
-prediction_proba = modelGaussianIris.predict_proba(df)
+
 
 st.subheader('Prediction')
 st.write(prediction)
 
-st.subheader('Prediction Probability')
-st.write(prediction_proba)
+
